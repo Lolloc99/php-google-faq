@@ -13,12 +13,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- 
-        Riscrivere questa pagina del sito google
-        https://policies.google.com/faq.
-        Ci sono diverse domande con relative risposte.
-        Gestire il “Database” e la visualizzazione di queste domande e risposte con PHP.
-    -->
 
     <?php 
     $faqs = [
@@ -93,24 +87,26 @@
     ]
     ?>
     <!-- <a href='#'></a> -->
-    <header>
-        <div class="col col-sx">
-            <img src="" alt="logo">
-            <h2>Privacy e termini</h2>
-        </div>
+    <section class="fixed">
+        <header>
+            <div class="col col-sx">
+                <img src="./img/google_logo.png" alt="logo">
+                <small>Privacy e termini</small>
+            </div>
 
-        <div class="col col-dx">
-            <p>icona</p>
-            <img src="" alt="User">
-        </div>
-    </header>
-    <nav>
-        <p>Introduzione</p>
-        <p>Norme sulla privacy</p>
-        <p>Termini di servizio</p>
-        <p>Tecnologie</p>
-        <p>Domande frequenti</p>
-    </nav>
+            <div class="col col-dx">
+                <i class="fas fa-bars"></i>
+                <img src="./img/avatar.png" alt="user">
+            </div>
+        </header>
+        <nav>
+            <p>Introduzione</p>
+            <p>Norme sulla privacy</p>
+            <p>Termini di servizio</p>
+            <p>Tecnologie</p>
+            <p class="active">Domande frequenti</p>
+        </nav>
+    </section>
     <main>
         <section class="container">
             <?php 
@@ -121,5 +117,23 @@
             ?>
         </section>
     </main>
+    <footer>
+        <section class="container footer">
+            <ul>
+                <li>Google</li>
+                <li>Tutto su Google</li>
+                <li>Privacy</li>
+                <li>Termini</li>
+            </ul>
+            <div>
+                <i class="fas fa-language"></i>
+                <select >
+                    <option value="1">Italiano</option>
+                    <option value="2">English</option>
+                    <option value="3">Francais</option>
+                </select>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
